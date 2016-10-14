@@ -1,6 +1,11 @@
 FROM lsiobase/alpine.python.armhf
 MAINTAINER smdion <me@seandion.com> ,sparklyballs
 
+# set version label
+ARG BUILD_DATE
+ARG VERSION
+LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+
 # install packages
 RUN \
  apk add --no-cache \

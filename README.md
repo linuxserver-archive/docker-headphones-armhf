@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/headphones
-[![](https://images.microbadger.com/badges/image/lsioarmhf/headphones.svg)](http://microbadger.com/images/lsioarmhf/headphones "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/headphones.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/headphones.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-headphones)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-headphones/)
+[![](https://images.microbadger.com/badges/version/lsioarmhf/headphones.svg)](https://microbadger.com/images/lsioarmhf/headphones "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/headphones.svg)](http://microbadger.com/images/lsioarmhf/headphones "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/headphones.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/headphones.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-headphones)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-headphones/)
 [hub]: https://hub.docker.com/r/lsioarmhf/headphones/
 
 
@@ -66,7 +66,16 @@ Access WebUI at http://localhost:8181 and walk through the wizard.
 
 * To monitor the logs of the container in realtime `docker logs -f Headphones`.
 
-## Version History
+* container version number 
 
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' headphones`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/headphones`
+
+## Versions
+
++ **14-10-16:** Add version layer information.
 + **11.09.16:** Add layer badges to README.
 + **08.09.16:** Inital Release
