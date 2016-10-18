@@ -82,6 +82,6 @@ Access WebUI at http://localhost:8181 and walk through the wizard.
 
 ## Versions
 
-+ **14-10-16:** Add version layer information.
++ **14.10.16:** Add version layer information.
 + **11.09.16:** Add layer badges to README.
 + **08.09.16:** Inital Release
