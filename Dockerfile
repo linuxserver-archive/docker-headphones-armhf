@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.python.armhf
+FROM lsiobase/alpine.python.armhf:3.5
 MAINTAINER smdion <me@seandion.com> ,sparklyballs
 
 # set version label
