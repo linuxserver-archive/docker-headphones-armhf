@@ -2,6 +2,8 @@
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
+[appurl]: https://github.com/rembo10/headphones
+[hub]: https://hub.docker.com/r/lsioarmhf/headphones/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,13 +14,11 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 # lsioarmhf/headphones
 [![](https://images.microbadger.com/badges/version/lsioarmhf/headphones.svg)](https://microbadger.com/images/lsioarmhf/headphones "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/headphones.svg)](http://microbadger.com/images/lsioarmhf/headphones "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/headphones.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/headphones.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-headphones)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-headphones/)
-[hub]: https://hub.docker.com/r/lsioarmhf/headphones/
 
 
 Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.
 
-[![headphones](http://i.imgur.com/5vSV3Gkl.png)][headurl]
-[headurl]: https://github.com/rembo10/headphones
+[![headphones](http://i.imgur.com/5vSV3Gkl.png)][appurl]
 
 ## Usage
 
