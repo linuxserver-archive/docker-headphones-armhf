@@ -6,27 +6,25 @@ ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
-# install packages
-RUN \
- apk add --no-cache \
-	ffmpeg \
-	mc
-
-# install build packages
+# install build packages
 RUN \
  apk add --no-cache --virtual=build-dependencies \
 	g++ \
 	gcc \
 	make && \
 
-# compile shntool
+# install runtime packages
+ apk add --no-cache \
+	ffmpeg \
+	mc && \
+
+# compile shntool
  mkdir -p \
 	/tmp/shntool && \
  curl -o \
  /tmp/shntool-src-tar.gz -L \
-	http://www.etree.org/shnutils/shntool/dist/src/shntool-3.0.10.tar.gz && \
- tar xf \
- /tmp/shntool-src-tar.gz -C \
+	http://shnutils.freeshell.org/shntool/dist/src/shntool-3.0.10.tar.gz && \
+ tar xf /tmp/shntool-src-tar.gz -C \
 	/tmp/shntool --strip-components=1 && \
  cd /tmp/shntool && \
  ./configure \
@@ -38,7 +36,7 @@ RUN \
  make && \
  make install && \
 
-# cleanup
+# cleanup
  apk del --purge \
 	build-dependencies && \
  rm -rf \
@@ -48,6 +46,6 @@ RUN \
 # add local files
 COPY root/ /
 
-# ports and volumes
+# ports and volumes
 EXPOSE 8181
 VOLUME /config /downloads /music
