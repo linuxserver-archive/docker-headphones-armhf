@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.python.armhf:3.5
+FROM lsiobase/alpine.python.armhf:3.6
 MAINTAINER smdion <me@seandion.com> ,sparklyballs
 
 # set version label
@@ -16,6 +16,7 @@ RUN \
 # install runtime packages
  apk add --no-cache \
 	ffmpeg \
+	flac \
 	mc && \
 
 # compile shntool
