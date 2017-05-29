@@ -82,6 +82,7 @@ Access WebUI at http://localhost:8181 and walk through the wizard.
 
 ## Versions
 
++ **29.05.17:** Add flac package to handle FLAC based .cue., Rebase to alpine 3.6.
 + **03.05.17:** Reduce layer, replace broken source for shntool.
 + **07.02.17:** Rebase to alpine 3.5.
 + **14.10.16:** Add version layer information.
