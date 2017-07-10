@@ -13,8 +13,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/headphones
-[![](https://images.microbadger.com/badges/version/lsioarmhf/headphones.svg)](https://microbadger.com/images/lsioarmhf/headphones "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/headphones.svg)](http://microbadger.com/images/lsioarmhf/headphones "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/headphones.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/headphones.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-headphones)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-headphones/)
-
+[![](https://images.microbadger.com/badges/version/lsioarmhf/headphones.svg)](https://microbadger.com/images/lsioarmhf/headphones "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/headphones.svg)](https://microbadger.com/images/lsioarmhf/headphones "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/headphones.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/headphones.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/armhf/armhf-headphones)](https://ci.linuxserver.io/job/Docker-Builders/job/armhf/job/armhf-headphones/)
 
 Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.
 
